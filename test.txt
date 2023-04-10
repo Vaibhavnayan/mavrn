@@ -1,0 +1,61 @@
+Plugins for eclipse	- https://testng.org/doc/download.html
+
+Data Driven Testing - Utilise the data from excel. Name, email, desc
+
+
+
+Test suite - collection of test cases
+
+10 test cases - smoke testing
+10 test cases - functional testing
+10 test cases - non functional testing
+
+
+how to skip test case
+
+
+generate the report
+
+
+BDD Framework - BDD is an agile software development process
+(Not a Software Testing process) which defines 
+expectation from an application to behave from 
+intended user prospective.
+ 
+Each scenario is written in form of Given (Pre-conditions/ Context), 
+When (Action/Event Performed) and Then (Result/Outcomes) format
+
+
+dependencies - 
+Rest Assured 
+TestNG
+hamcrest(assertion)
+	Hamcrest is commonly used with testng and other testing frameworks 
+	for making assertions. ...
+
+
+keyword	
+	given - define headers, parameters, body, auth, cookies etc
+	when - post, get,put,delete urls
+	then - assertion,extraction of data, 
+	
+	
+	
+---	capture the data from response in bdd framework
+--- Parallel testing ?
+--- use of dynamic data in other APIs
+--- logger
+--- Newman (to execute postman api using cmd) - node.js
+--- github  (postman
+--- jenkins (postman
+--- graphql(postman)
+--
+
+
+--- API Performance Testing (JMETER) - optional 
+
+
+
+
+
+
