@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="29" passed="10" failed="18" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-10T16:49:45 IST" name="Suite" finished-at="2023-04-10T16:50:11 IST" duration-ms="26186">
+    <groups>
+      <group name="Functional">
+        <method signature="CreateCustomerAPI.TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" name="TC1_validAPIKeys" class="testcases.CreateCustomerAPI"/>
+        <method signature="GetCustomerAPI.TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" name="TC1_validAPIKey" class="testcases.GetCustomerAPI"/>
+      </group> <!-- Functional -->
+      <group name="Smoke">
+        <method signature="CreateCustomerAPI.TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" name="TC1_validAPIKeys" class="testcases.CreateCustomerAPI"/>
+        <method signature="CreateCustomerAPI.TC2_skipTestcase()[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" name="TC2_skipTestcase" class="testcases.CreateCustomerAPI"/>
+        <method signature="GetCustomerAPI.TC2_invalidAPIKey()[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" name="TC2_invalidAPIKey" class="testcases.GetCustomerAPI"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-04-10T16:49:45 IST" name="Test" finished-at="2023-04-10T16:50:11 IST" duration-ms="26186">
+      <class name="testcases.GetCustomerAPI">
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:05 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:06 IST" duration-ms="1527" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vaibhav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vaibhav@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [1000] but found [536]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [1000] but found [536]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:06 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:07 IST" duration-ms="536" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [492]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [492]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:07 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:08 IST" duration-ms="548" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[paul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [507]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [507]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:08 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:08 IST" duration-ms="669" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[max]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [639]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [639]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:08 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:09 IST" duration-ms="536" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sourav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [511]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [511]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:09 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:09 IST" duration-ms="550" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [515]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [515]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:09 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:10 IST" duration-ms="551" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vidya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [522]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [522]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:10 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:10 IST" duration-ms="549" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abdul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [521]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [521]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC1_validAPIKey(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:10 IST" name="TC1_validAPIKey" data-provider="dataExtractor" finished-at="2023-04-10T16:50:11 IST" duration-ms="560" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [528]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [200],
+expected [HTTP/1.1 400 OK] but found [HTTP/1.1 200 OK],
+expected [vaibhav@testing.com] but found [john@testing.com],
+expected [1000] but found [528]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.GetCustomerAPI.TC1_validAPIKey(GetCustomerAPI.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKey -->
+        <test-method signature="TC2_invalidAPIKey()[pri:0, instance:testcases.GetCustomerAPI@769f71a9]" started-at="2023-04-10T16:50:11 IST" name="TC2_invalidAPIKey" finished-at="2023-04-10T16:50:11 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_invalidAPIKey -->
+      </class> <!-- testcases.GetCustomerAPI -->
+      <class name="utility.DataExtractor">
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:46 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:50 IST" duration-ms="3761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vaibhav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vaibhav@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:50 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:51 IST" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:51 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:52 IST" duration-ms="730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[paul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:52 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:53 IST" duration-ms="776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[max]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:53 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:54 IST" duration-ms="1114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sourav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:54 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:55 IST" duration-ms="895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:55 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:55 IST" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vidya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:55 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:56 IST" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abdul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method signature="CreateCustomer(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:utility.DataExtractor@78b66d36]" started-at="2023-04-10T16:49:56 IST" name="CreateCustomer" data-provider="dataExtractor" finished-at="2023-04-10T16:49:57 IST" duration-ms="718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+      </class> <!-- utility.DataExtractor -->
+      <class name="testcases.CreateCustomerAPI">
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:49:57 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:49:58 IST" duration-ms="1098" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vaibhav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vaibhav@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [1068]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [1068]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:49:58 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:49:59 IST" duration-ms="819" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [801]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [801]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:49:59 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:00 IST" duration-ms="793" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[paul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [778]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [778]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:00 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:01 IST" duration-ms="839" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[max]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [828]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [828]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:01 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:01 IST" duration-ms="744" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sourav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [736]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [736]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:01 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:03 IST" duration-ms="1148" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [1136]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [1136]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:03 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:03 IST" duration-ms="712" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vidya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [703]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [703]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:03 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:04 IST" duration-ms="699" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abdul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [691]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [691]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC1_validAPIKeys(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:04 IST" name="TC1_validAPIKeys" data-provider="dataExtractor" finished-at="2023-04-10T16:50:05 IST" duration-ms="784" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john@testing.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[this is testdata9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [1000] but found [775]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [1000] but found [775]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.CreateCustomerAPI.TC1_validAPIKeys(CreateCustomerAPI.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_validAPIKeys -->
+        <test-method signature="TC2_skipTestcase()[pri:0, instance:testcases.CreateCustomerAPI@49b0b76]" started-at="2023-04-10T16:50:05 IST" name="TC2_skipTestcase" finished-at="2023-04-10T16:50:05 IST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test is Skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test is Skipped
+at testcases.CreateCustomerAPI.TC2_skipTestcase(CreateCustomerAPI.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_skipTestcase -->
+      </class> <!-- testcases.CreateCustomerAPI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
